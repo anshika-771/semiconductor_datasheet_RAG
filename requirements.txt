@@ -1,0 +1,22 @@
+# Notebook runtime (VS Code Jupyter extension uses this kernel)
+ipykernel>=6.29
+ipywidgets>=8.1
+
+# PDF extraction
+pdfplumber>=0.11
+
+# Embeddings (BAAI/bge-small-en-v1.5, CPU) - pulls in PyTorch
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.3
+sentence-transformers>=3.0
+
+# Vector store
+qdrant-client>=1.12
+
+# Display / utilities
+pandas>=2.2
+tqdm>=4.66
+truststore>=0.10        # corporate proxy: use the Windows certificate store
+
+# Optional: answer generation in notebook 2
+openai>=1.40
